@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Spotify</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><span  class="fa fa-spotify"></span> Spotify</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"> </i> Your Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-cog"> </i> Settings</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-user"> </i> Account  <i class="fa fa-external-link" aria-hidden="true"></i> </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Upgrade Premium <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1.9 collapse show d-md-flex bg-black pt-2 pl-0 min-vh-100" id="sidebar">
+                <ul class="nav flex-column flex-nowrap overflow-hidden ">
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="index.html"><i class="fa fa-home"></i> <span class="d-none d-sm-inline">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="search.html">
+                            <i class="fa fa-search"></i> <span class="d-none d-sm-inline">Search</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="your_playlist.html">
+                            <i class="fa fa-file-audio-o"></i> <span class="d-none d-sm-inline">Your Library</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="download.html">
+                            <i class="fa fa-download"></i> <span class="d-none d-sm-inline"><u>My Downloads</u></span>
+                        </a>
+                    </li>
+                    <br>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1"><i class="fa fa-magnet"></i> <span class="d-none d-sm-inline">My Playlist ▾</span></a>
+                        <div class="collapse" id="submenu1" aria-expanded="false">
+                            <ul class="flex-column pl-2 nav">
+                                <li class="nav-item"><a class="nav-link py-0" href="#"><i class="fa fa-male"></i><span> Mine</span></a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1"><i class="fa fa-music"></i> <span> Music Directors ▾</span></a>
+                                    <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                        <ul class="flex-column nav pl-4">
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">
+                                                    <i class="fa fa-circle-o-notch"></i> Illayaraja </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">
+                                                    <i class="fa fa-circle-o-notch"></i> AR Rahman </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">
+                                                    <i class="fa fa-circle-o-notch"></i> Yuvan Shankar Raja </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">
+                                                    <i class="fa fa-circle-o-notch"></i> Anirudh </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> -->
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#">
+                            <i class="fa fa-play-circle"></i> <span class="d-none d-sm-inline">Create Playlist</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="Liked_songs.html">
+                            <i class="fa fa-heart"></i> <span class="d-none d-sm-inline">Liked Songs</span>
+                        </a>
+                    </li>
+                    <br><br><br>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Now Playing</span>
+                        </a>
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Ninnu Chuse...</span>
+                        </a>
+                    </li>
+                    <br><br>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Recently Played</span>
+                        </a>
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Maya Maya....</span>
+                        </a>
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Eduvariyoo....</span>
+                        </a>
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Enjoy Enjammi....</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <!----->
+            <!-- <div class="col pt-2">
+                <div class="container">
+                    <br>
+                    <h2>My Downloads</h2>
+                    <table class="table table-borderless table-hover">
+                        <thead>
+                            <tr class="bg-dark">
+                                <th><b>#</b></th>
+
+                                <th><b>Title</b></th>
+                                <th><b>Duration</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-dark">
+                                <td>1</td>
+
+                                <td>Venmathiye</td>
+
+                                <td>5:27</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>2</td>
+
+                                <td>Eduvariyoo</td>
+
+                                <td>4:49</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>3</td>
+
+                                <td>Vaathi Coming</td>
+
+                                <td>3:59</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>4</td>
+
+                                <td>Ninnu Chuse</td>
+                                <td>3:20</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>5</td>
+
+                                <td>Two-Two-Two</td>
+
+                                <td>2:47</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>6</td>
+
+                                <td>Andha Kaana Paathaka</td>
+
+                                <td>4:45</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>7</td>
+
+                                <td>Oru Naali</td>
+
+                                <td>6:00</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>8</td>
+
+                                <td>Anbe Anbe</td>
+
+                                <td>4:00</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>9</td>
+
+                                <td>Vasthunna</td>
+
+                                <td>5.00</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>10</td>
+
+                                <td>Malai Vara Poguthe</td>
+
+                                <td>4:01</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>11</td>
+
+                                <td>Manasula Soora</td>
+
+                                <td>5:02</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>12</td>
+
+                                <td>Kanne Kanne</td>
+
+                                <td>4:21</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>13</td>
+
+                                <td>Kannama</td>
+
+                                <td>5.00</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div> -->
+
+            <div class="col pt-2">
+                <div class="container">
+                    <br>
+                    <h4>My Downloads</h4>
+                    <table class="table table-borderless table-hover">
+                        <thead class="bg-dark">
+                            <tr>
+                                <th><b>#</b></th>
+                                <th><span class="fa fa-heart"></span></th>
+                                <th><b>Title</b></th>
+                                <th><b>Album</b></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-dark">
+                                <td>1</td>
+                                <td><span class="fa fa-heart"></span></td>
+                                <td><iframe src="https://open.spotify.com/embed/track/1JVfJe7LQSePY6EyF1fBUX" width="100%" height="80" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
+
+                                <td>5:27</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>2</td>
+                                <td><span class="fa fa-heart"></span></td>
+                                <td><iframe src="https://open.spotify.com/embed/track/6VVaDd6bf8jCS2FNu8xy1T" width="100%" height="80" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
+
+                                <td>4:12</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>3</td>
+                                <td><span class="fa fa-heart"></span></td>
+                                <td><iframe src="https://open.spotify.com/embed/track/4dJrjWtAhEkW7VdPYSL1Ip" width="100%" height="80" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
+
+                                <td>3:48</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>4</td>
+                                <td><span class="fa fa-heart"></span></td>
+                                <td><iframe src="https://open.spotify.com/embed/track/16RigX2qPBrjju5ddZv1X6" width="100%" height="80" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
+
+                                <td>4:52</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>5</td>
+                                <td><span class="fa fa-heart"></span></td>
+                                <td><iframe src="https://open.spotify.com/embed/track/6C8JJFoGC4dkVtAHVK3iif" width="100%" height="80" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
+
+                                <td>2:57</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <td>6</td>
+                                <td><span class="fa fa-heart"></span></td>
+                                <td><iframe src="https://open.spotify.com/embed/track/04NcPs5V6181I5hvUFY4Vp" width="100%" height="80" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
+                                <td>4:55</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div>
+                        <h5>Now Playing</h5>
+                        <iframe src="https://open.spotify.com/embed/track/16RigX2qPBrjju5ddZv1X6?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

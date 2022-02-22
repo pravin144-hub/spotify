@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Spotify</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><span  class="fa fa-spotify"></span> Spotify</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user text-success"> </i> Your Account
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-success" href="#">Profile</a>
+                        <a class="dropdown-item text-success" href="#"><i class="fa fa-cog text-success"> </i> Settings</a>
+                        <a class="dropdown-item text-success" href="#"><i class="fa fa-user text-success"> </i> Account  <i class="fa fa-external-link" aria-hidden="true"></i> </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-success" href="Signup.html">Log Out</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-success" href="#">Upgrade Premium</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1.9 collapse show d-md-flex bg-black pt-2 pl-0 min-vh-100" id="sidebar">
+                <ul class="nav flex-column flex-nowrap  overflow-hidden ">
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="index.html"><i class="fa fa-home"></i> <span class="d-none d-sm-inline"><u>Home</u></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="search.html">
+                            <i class="fa fa-search"></i> <span class="d-none d-sm-inline">Search</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="your_playlist.html">
+                            <i class="fa fa-file-audio-o"></i> <span class="d-none d-sm-inline">Your Library</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="download.html">
+                            <i class="fa fa-download"></i> <span class="d-none d-sm-inline">My Downloads</span>
+                        </a>
+                    </li>
+                    <br>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1"><i class="fa fa-magnet"></i> <span class="d-none d-sm-inline">My Playlist ▾</span></a>
+                        <div class="collapse" id="submenu1" aria-expanded="false">
+                            <ul class="flex-column pl-2 nav">
+                                <li class="nav-item"><a class="nav-link py-0" href="#"><i class="fa fa-male"></i><span> Mine</span></a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1"><i class="fa fa-music"></i> <span> Music Directors ▾</span></a>
+                                    <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                        <ul class="flex-column nav pl-4">
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">
+                                                    <i class="fa fa-circle-o-notch"></i> Illayaraja </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">
+                                                    <i class="fa fa-circle-o-notch"></i> AR Rahman </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">
+                                                    <i class="fa fa-circle-o-notch"></i> Yuvan Shankar Raja </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">
+                                                    <i class="fa fa-circle-o-notch"></i> Anirudh </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> -->
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#">
+                            <i class="fa fa-play-circle"></i> <span class="d-none d-sm-inline">Create Playlist</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="Liked_songs.html">
+                            <i class="fa fa-heart"></i> <span class="d-none d-sm-inline">Liked Songs</span>
+                        </a>
+                    </li>
+                    <br><br><br>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Now Playing</span>
+                        </a>
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Ninnu Chuse...</span>
+                        </a>
+                    </li>
+                    <br><br><br>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Recently Played</span>
+                        </a>
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Maya Maya....</span>
+                        </a>
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Eduvariyoo....</span>
+                        </a>
+                        <a class="nav-link text-truncate" href="#">
+                            <span class="d-none d-sm-inline">Enjoy Enjammi....</span>
+                        </a>
+                    </li> -->
+                    <br><br><br>
+                </ul>
+
+            </div>
+            <!--side-->
+            <div class="col pt-2">
+                <div class="container">
+                    <br>
+                    <h4>Artists</h4>
+                    <div class="row">
+                        <div class="col-md-3 sm-2">
+                            <div class="card border-success text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <img class="card-img-top" src="image/ilaya.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Illayaraja</h5>
+                                    <h6>Playlist</h6>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-heart" data-toggle="tooltip" data-placement="bottom" title="Add to Favorites"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-play-circle" data-toggle="tooltip" data-placement="right" title="Play This Playlist"></span> Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 sm-2">
+                            <div class="card border-success text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <img class="card-img-top" src="image/rahman.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">A.R Rahman</h5>
+                                    <h6>Playlist</h6>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-heart" data-toggle="tooltip" data-placement="bottom" title="Add to Favorites"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-play-circle" data-toggle="tooltip" data-placement="right" title="Play This Playlist"></span> Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 sm-2">
+                            <div class="card border-success text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <img class="card-img-top" src="image/Yuvan.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Yuvan Shankar Raja</h5>
+                                    <h6>Playlist</h6>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-heart" data-toggle="tooltip" data-placement="bottom" title="Add to Favorites"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-play-circle" data-toggle="tooltip" data-placement="right" title="Play This Playlist"></span> Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3 sm-2">
+                            <div class="card border-success text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <img class="card-img-top" src="image/Ani.jpeg" alt="">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Anirudh Ravichandran</h5>
+                                    <h6>Playlist</h6>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-heart" data-toggle="tooltip" data-placement="bottom" title="Add to Favorites"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-play-circle" data-toggle="tooltip" data-placement="right" title="Play This Playlist"></span> Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+                        <div class="col-md-3 sm-2">
+                            <div class="card border-success text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <img class="card-img-top" src="image/spb.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">S.P Balasubrahmanyam</h5>
+                                    <h6>Playlist</h6>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-heart" data-toggle="tooltip" data-placement="bottom" title="Add to Favorites"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-play-circle" data-toggle="tooltip" data-placement="right" title="Play This Playlist"></span> Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 sm-2">
+                            <div class="card border-success text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <img class="card-img-top" src="image/chitra.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Chitra</h5>
+                                    <h6>Playlist</h6>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-heart" data-toggle="tooltip" data-placement="bottom" title="Add to Favorites"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-play-circle" data-toggle="tooltip" data-placement="right" title="Play This Playlist"></span> Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 sm-2">
+                            <div class="card border-success text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <img class="card-img-top" src="image/SaNa.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Santhosh Narayanan</h5>
+                                    <h6>Playlist</h6>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-heart" data-toggle="tooltip" data-placement="bottom" title="Add to Favorites"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-play-circle" data-toggle="tooltip" data-placement="right" title="Play This Playlist"></span> Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3 sm-2">
+                            <div class="card border-success text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <img class="card-img-top" src="image/GVP.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">G.V Prakash</h5>
+                                    <h6>Playlist</h6>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-heart" data-toggle="tooltip" data-placement="bottom" title="Add to Favorites"></span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-sm">
+                                        <span class="fa fa-play-circle" data-toggle="tooltip" data-placement="right" title="Play This Playlist"></span> Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Now Playing</h5>
+                        <iframe src="https://open.spotify.com/embed/track/16RigX2qPBrjju5ddZv1X6?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--End-->
+        </div>
+    </div>
+</body>
+
+</html>

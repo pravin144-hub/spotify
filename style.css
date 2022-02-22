@@ -1,0 +1,28 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1DB954 !important;
+}
+body{
+    background-color: black !important;
+}
+.navbar-brand{
+    color: #1DB954 !important;
+}
+
+.navbar-toggler{
+    background-color: #1DB954;
+}
+.container-fluid{
+    background-color: #202020;
+}
+.nav{
+    background-color:#202020 !important;
+}
+.fa-spotify{
+    color: #1DB954 !important;
+    font-size: 30px;
+}
+thead{
+    color: white !important;
+}
+
