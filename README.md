@@ -1,6 +1,6 @@
-# spotify
+# Spotify
 Spotify Replica Designed Using HTML,CSS,BOOTSTRAP and JS
 
-Check this out
+Website link:
 https://bit.ly/spotifyreplica
  
